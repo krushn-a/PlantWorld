@@ -1,0 +1,8 @@
+<div class="card" >
+  <a routerLink="/details" routerLinkActive="active">
+    <img *ngIf="cardData && cardData.default_image && cardData.default_image.thumbnail" [src] = "cardData.default_image.thumbnail" class="card-img-top" alt="...">
+  </a>
+  <div class="card-body">
+    <h5 class="card-title">{{cardData.common_name}}</h5>
+  </div>
+</div>
